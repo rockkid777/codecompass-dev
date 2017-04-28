@@ -33,7 +33,13 @@ Alternatively you can use [Kitematic][kitematic] to check the logs and settings 
 
 For further information check [docker][docker docs] and [docker-compose docs][compose docs].
 
-If you have any troubles or have ideas feel free ot open an issue.
+If you have any troubles or have ideas feel free to open an issue.
+
+### Connect to a running container
+
+1. step into the project root
+2. connect a bash terminal to a running container (lets say to the codecompass service container)
+`docker-compose exec codecompass /bin/bash`
 
 [docker download page]: https://www.docker.com/
 [codecompass origin]: https://github.com/Ericsson/CodeCompass/
