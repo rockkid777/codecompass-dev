@@ -41,6 +41,16 @@ If you have any troubles or have ideas feel free to open an issue.
 2. connect a bash terminal to a running container (lets say to the codecompass service container)
 `docker-compose exec -i -t codecompass /bin/bash`
 
+### Experimentinf with build or codecompass images
+
+Just set copy codecompass or build service (or modify the original) with changing the
+command argument to `["/bin/bash"]` then run the following (assuming your new service name is 'experiment'):
+``` bash
+$ docker-compose rm 'experiment' # if experiment container already exists and stoped
+$ docker-compose create 'experiment'
+$ docker-compose start 'experiment'
+```
+
 [docker download page]: https://www.docker.com/
 [codecompass origin]: https://github.com/Ericsson/CodeCompass/
 [my compose file]: https://github.com/rockkid777/CodeCompass/blob/dockerizing/docker-compose.yaml.sample
