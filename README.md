@@ -39,7 +39,7 @@ If you have any troubles or have ideas feel free to open an issue.
 
 1. step into the project root
 2. connect a bash terminal to a running container (lets say to the codecompass service container)
-`docker-compose exec codecompass /bin/bash`
+`docker-compose exec -i -t codecompass /bin/bash`
 
 [docker download page]: https://www.docker.com/
 [codecompass origin]: https://github.com/Ericsson/CodeCompass/
