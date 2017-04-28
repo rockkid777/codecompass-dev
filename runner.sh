@@ -46,10 +46,6 @@ run() {
         sleep 1
     done
 
-    while [ 1 -eq 1 ]; do
-        sleep 1
-    done
-
     echo "Start parsing..."
 
     clean_dir ~/cc/workdir
