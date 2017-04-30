@@ -12,9 +12,9 @@ have [my compose sample][my compose file] file to get started.
 
 1. checkout the [project][codecompass origin]
 2. put the [docker-compose.yaml][my compose file] to the projects root. This file assumes the project root
-    is `~/Projects/CodeCompass` on your machine. Change it if your differs. The build and codecompass services havve a
-    common shared folder named ~/cc. This folder will contain the built version of Code Compass (built by the build service).
-    Change the pass if you want to change its location on your machine.
+is `~/Projects/CodeCompass` on your machine. Change it if your differs. The build and codecompass services have a
+common shared folder named ~/cc. This folder will contain the built version of Code Compass (built by the build service).
+Change the pass if you want to change its location on your machine.
 3. start the images with `docker-compose up -d` from the project root
 4. make your modifications on the Code Compass project and start the build container with `docker-compose start build`
 then restart the codecompass container with `docker-compose restart codecompass`
