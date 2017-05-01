@@ -14,7 +14,7 @@ have [my compose sample][my compose file] file to get started.
 2. put the [docker-compose.yaml][my compose file] to the projects root. This file assumes the project root
 is `~/Projects/CodeCompass` on your machine. Change it if your differs. The build and codecompass services have a
 common shared folder named ~/cc. This folder will contain the built version of Code Compass (built by the build service).
-Change the pass if you want to change its location on your machine.
+Change the path if you want to change its location on your machine.
 3. start the images with `docker-compose up -d` from the project root
 4. make your modifications on the Code Compass project and start the build container with `docker-compose start build`
 then restart the codecompass container with `docker-compose restart codecompass`
@@ -24,7 +24,7 @@ then restart the codecompass container with `docker-compose restart codecompass`
 ### Using the web db interface
 
 1. with `docker-compose up -d` the db_admin image started automatically and available on on http://localhost:8081
-2. login with custom options. Use pgsql, the default user and password is "pgsql". The host is 'db'
+2. login with custom options. Use pgsql, the default user and password is "postgres". The host is 'db'
 (this is the hostname of the db container. Docker handles the host).
 
 ## Some useful tips
